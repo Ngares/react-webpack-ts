@@ -1,9 +1,9 @@
-import React from "react"
+import React from 'react';
 
-export default function App() {
+export default function App (): React.JSX.Element {
     return (
         <div>
-            
+            123
         </div>
-    )
-};
+    );
+}

@@ -1,0 +1,23 @@
+{
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+
+    "settings": {
+        "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "import/parsers": { "@typescript-eslint/parser": [".ts", ".tsx"] },
+        "import/resolver": { "typescript": true, "node": { "extensions": [".js", ".jsx", ".ts", ".tsx"] } }
+    },
+
+    "extends": [
+        "airbnb", "airbnb/hooks",
+        "./config/eslint/airbnb.js",
+        
+        "plugin:@typescript-eslint/all",
+        "./config/eslint/typescript.js",
+        
+        "plugin:lodash/recommended",
+        "./config/eslint/lodash.js"
+    ]
+
+}

@@ -1,5 +1,8 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable @typescript-eslint/no-require-imports */
+
 const { merge } = require('webpack-merge');
-const commonConfig = require('./webpack.config.common.js');
+const commonConfig = require('./webpack.config.common');
 
 module.exports = merge(commonConfig, {
     mode: 'production',
