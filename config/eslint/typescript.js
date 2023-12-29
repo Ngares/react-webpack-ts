@@ -1,5 +1,9 @@
 /* eslint-disable @typescript-eslint/no-magic-numbers */
 module.exports = {
+    parserOptions: {
+        project: './tsconfig.json',
+    },
+
     rules: {
         '@typescript-eslint/array-type': ['error', { default: 'array-simple', readonly: 'array-simple' }],
 

@@ -1,5 +1,11 @@
 /* eslint-disable @typescript-eslint/no-magic-numbers */
 module.exports = {
+    settings: {
+        'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
+        'import/parsers': { '@typescript-eslint/parser': ['.ts', '.tsx'] },
+        'import/resolver': { typescript: true, node: { extensions: ['.js', '.jsx', '.ts', '.tsx'] } },
+    },
+
     rules: {
         'array-bracket-newline': ['error', 'consistent'],
         'array-element-newline': ['error', 'consistent'],
