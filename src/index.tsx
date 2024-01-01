@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import App from './App';
+import App from './Bootstrap';
 
 const rootContainer = document.getElementById('root') as HTMLDivElement;
 const root = createRoot(rootContainer);

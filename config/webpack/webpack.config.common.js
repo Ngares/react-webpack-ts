@@ -29,6 +29,38 @@ module.exports = {
                     configFile: path.resolve(__dirname, '../..', 'tsconfig.json'),
                 },
             },
+
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader',
+                ],
+            },
+
+            {
+                test: /\.(png|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+            },
+
+            {
+                test: /\.svg$/i,
+                type: 'asset',
+                resourceQuery: /url/,
+            },
+
+            {
+                test: /\.svg$/i,
+                issuer: /\.[jt]sx?$/,
+                resourceQuery: { not: [/url/] },
+                use: ['@svgr/webpack'],
+            },
+
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
+            },
         ],
     },
 
