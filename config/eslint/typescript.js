@@ -88,6 +88,8 @@ module.exports = {
 
         '@typescript-eslint/prefer-nullish-coalescing': 'off',
 
+        '@typescript-eslint/prefer-readonly-parameter-types': 'off',
+
         '@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true }],
 
         '@typescript-eslint/require-await': 'off',
@@ -101,5 +103,6 @@ module.exports = {
         '@typescript-eslint/typedef': 'off',
 
         '@typescript-eslint/unbound-method': 'off',
+
     },
 };
